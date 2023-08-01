@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Templates</title></head>
+  <body>
+
+    <div id="snipcart-templates">
+      <!-- 
+        Insert custom templates here
+        Reference: https://docs.snipcart.com/v3/themes/default/reference
+      -->
+      {# <cart-summary-item> #}
+      <item-line>
+        <li class="snipcart-cart-summary-item">
+          <span class="snipcart-cart-summary-item__name snipcart__font--slim">
+            {{ item.name }}
+          </span>
+
+          <span>yada yada yada</span>
+
+          <span class="snipcart-cart-summary-item__quantity snipcart__font--slim">
+            {{ $localize('cart_summary.quantity') }}{{ item.quantity }}
+          </span>
+
+          <span class="snipcart-cart-summary-item__price snipcart__font--slim">
+            {{ item.totalPrice | money(currency) }}
+          </span>
+          <div v-if="item.customFields && item.customFields.length > 0">
+            <strong>Custom fields</strong>
+            <span v-for="(customField, index) in item.customFields" :key="index">
+              {{ customField.name }}: {{ customField.value }}
+            </span>
+          </div>
+        </li>
+      </item-line>
+      {# </cart-summary-item> #}
+    </div>
+
+  </body>
+</html>

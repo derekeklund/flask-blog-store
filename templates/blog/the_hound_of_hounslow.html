@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    The Blog
+{% endblock %}
+
+{% block header %}
+
+    <!-- Banner image -->
+    <div class="feature-img-wrapper">
+        <img class="feature-image" id="banner-img" src="/static/cramer sistine chapel retouched.png"/> 
+    </div>
+
+{% endblock %}
+
+{% block main %}
+
+    <div class="medium-page-wrapper">
+
+        <h2 class="blog-title">The Hound of Hounslow</h2>
+
+        <!-- Avatar and blog metadata -->
+        <span class="blogger-head"><img src="/static/meet_the_team_me.jpg" class="blogger-avatar" alt="Derek"></span>
+        <span class="blogger-head yes-margin">
+        <div class="blog-post-meta">
+        <a href="/meet_the_team" class="blogger-link">
+        <p class="no-margin">Derek</p>
+        </a>
+        <p class="no-margin">March 21, 2023</p>
+        </div>
+        </span>
+
+        <p>On May 6, 2010, Jim Cramer’s brain broke. “That is not a real price,” he yelled to his monitor. “OK? That is not a real price.” Proctor & Gamble had just fallen 25% in a manner of minutes, then 29%, then 31%. Cramer had never seen such a shiny knife, such a beautiful buy, and he searched frantically for the right camera to beg his followers to add PG to their portfolio.</p>
+        <p>There weren’t enough buttons on Cramer’s soundboard to fully capture how he felt about the quickest drop in Dow Jones history. In what would later be dubbed “The Crash of 2:45” or simply “The Flash Crash,” over a trillion dollars was wiped from the stock market in a manner of 15 minutes. The odd thing was, despite dropping more than 9% at one point, the market would rapidly recover a bit after 3 PM and would close only 3% lower for the day.</p>
+        <p>In the ensuing days and weeks, journalists and financial commentators and United States Congressmen would try and determine where this volatility had come from. Something weird had just happened.</p>
+        <iframe src="https://www.youtube.com/embed/zuj0nSBOVFs" class="blog-center YT" alt="Flash Crash YT Video"></iframe>
+        <p>In the investigations that followed, regulators would consider a couple of theories. Was this a “fat-finger trade” where a trader inadvertently placed a large sell order, triggering a domino effect of sorts where algos would in turn sell? Was this a well-coordinated cyberattack, aimed to cripple American institutions? Was it simply a dip exacerbated by high-frequency traders? Had Janet Yellen forgotten to change the printer toner?</p>
+        <p>Nobody knew. But five months after the flash crash, the SEC and the Commodity Futures Trading Commission (CFTC) released a joint report that on May 6, 2010 the market was “so fragmented and fragile that a single large trade could send stocks into a sudden spiral.” They stated that a group called Waddell & Reed Financial Inc. had inadvertently played a role in the crash by initiating a sale of 75,000 E-Mini S&P contracts ($4.1 billion total) as a hedge to an existing position. This, the report said, coupled with the high-frequency traders trying to sell the long futures contracts they had just picked up from Waddell & Reed, led to a game of “hot potato” where the contracts were resold to other HFTs.</p>
+        <figure>
+            <img src="/static/flash_crash.png" class="blog-center" alt="Flash Crash Timeline">
+            <figcaption>Silly Bloomberg, it wasn't this simple.</figcaption>
+        </figure>
+        <p>The report though was leaving out a crucial player.</p>
+        <p class="blog-section">***</p>
+        <p>In 2005, Navinder Sarao was living the dream. At 27 years old, he still lived with his parents in Hounslow, a working-class suburb outside of London, demanding tendies to be delivered to his bedroom by his sweet emigrant mother. To the people who knew him, Navinder, or Nav, was known to be quick-witted and quick to anger. He was dominant at Halo and FIFA, and he had a proclivity to focus on one task for hours and hours on end until he mastered it. He was almost obsessive in his interests.</p>
+        <p>Despite still living with his parents, young Nav had aspirations. In 2006, he responded to an ad in the Evening Standard that read, “Wanted: futures traders. Must work well under pressure.” That’s it. That was the ad. And Nav, with no experience and a honey mustard-stained tie, went to the FutexLive headquarters—a drab office situated above a supermarket 45 minutes outside London—and successfully hid his Asperger’s and got the job. He was now a professional trader.</p>
+        <p>Nav picked things up quickly. Realizing that he was surrounded by day-trading retards, he moved his desk to the corner of the shabby trading floor and bought a pair of noise-canceling headphones. He’d found success trading E-mini S&P Futures, which is the primary futures trading vehicle for the S&P 500. And with his noise-canceling headphones, Nav would follow the orders that would enter and leave the markets. His coworkers would marvel at the autist in the corner and the returns he was regularly pulling in.</p>
+        <p>Then 2008 happened. By the time the financial crisis was in full swing, Nav was almost thirty and had decided to leave Futex. He had accumulated $2 million from his trades the last couple of years, and he figured the most prudent move as a budding millionaire was to set up his command center in his bedroom. He still lived with his parents.</p>
+        <p class="blog-section">***</p>
+        <p>Nav realized something early on in the mortgage crisis that not everyone else did. He realized that governments would be forced to step in and save these retarded institutions, and he knew the banks wouldn’t be allowed to fall. And he bet $2 million—his whole net worth at the time—that he would be right. He made this bet on a Friday, and the following Monday, George Bush announced the TARP plan.</p>
+        <p>Prices proceeded to recover 19% over the next couple of weeks, and Nav rode the wave and turned his $2 million into $15 million. Did he rest on his laurels? Fuck no, this kid’s retarded! Nav didn’t want a wife and a home with a couple of kids running around. He wanted GLORY.</p>
+        <p>Around 2010, the markets were seeing an influx in high-frequency trading, and Nav took personal insult to these robots. People were getting scalped by these algos, and those scalps belonged to Nav. Those profits were rightfully his.</p>
+        <figure>
+            <img src="/static/nav_horizon.jpg" class="blog-center" alt="Navinder scanning the horizon">
+            <figcaption>Nav scanning the horizon for tendies.</figcaption>
+        </figure>
+        <p>In order to beat the robots, Nav decided to build his own robot. And unsurprisingly, fueled by Code Red and autism, Nav’s algo worked magnificently. Pretty soon, he was regularly pulling in half a million a day. All the while living in a cramped bedroom of his parents’ home that cost $300,000.</p>
+        <p class="blog-section">***</p>
+        <p>May 6, 2010, started out as a regular day for Nav. The markets were sliding a bit, and Jim Cramer was flailing about his studio as though he were fighting a cloud of bats, but this was roughly on par for the time. Nav’s algo was pumping E-mini sell orders into the market—$200 million worth of orders to be exact—which ultimately resulted in a loss of liquidity (don’t ask me how this worked, I’m still confused why my PLTR 12/11 40C aren’t printing). At around 1:40 EST, or 6:40 in Hounslow, his mother called from the bottom of the steps to inform Nav that din-din was ready and would he please come down.</p>
+        <figure>
+            <img src="/static/cramer_what.jpeg" class="blog-center" alt="Jim Cramer yelling into the ether">
+            <figcaption>The SEC should've put this guy on the case.</figcaption>
+        </figure>
+        <p>So Nav logged off.</p>
+        <p>And exactly one minute after that, the market began to fall at a rate that had never seen before. Nav had no idea though; he was in an argument with his father about why he needed to chew with his mouth open in order to let the scalding tendy fumes out. A trillion dollars had been wiped from American markets, and the instigator of it all was too retarded to know what he’d done.</p>
+        <p>The tendies were good though.</p>
+        <p class="blog-section">***</p>
+        <p>The trillion-dollar loss turned out to be not that big of a deal. The DOW snapped back from the 9% freefall like a rubber band, like any stock that Andrew Left has deemed to be a casino. But the NYSE and NASDAQ officials proceeded to meet over the next couple of months to try and determine what caused the nosedive and rapid recovery. In the reports that they would write, regulators made no reference to manipulation and no reference to Nav. In fact, he wasn’t even aware there was an investigation going on. He wasn’t aware he did anything wrong.</p>
+        <p>But regulators eventually began to notice that Nav was canceling a lot of orders. The CFTC sent him an email and asked if he could explain what he’d been up to. What was the reason for his canceling an obscene number of orders? That’s what big banks did. And that’d usually be fine and all, but Nav was a singular trader and that made it suspicious.</p>
+        <p>Nav wrote back to the CFTC explaining in careful terms that he had nothing to apologize for and that the CFTC could kiss his ass. He actually sent that. He told the CFTC to kiss his ass. Which, in hindsight, might’ve been a bad idea but the regulators were still too stupid and boomery to charge him with anything at the time. Nav would’ve gotten away with it too if it weren’t for a blabbermouth desk trader in Chicago who months later reported a different block of Nav’s trades to the CFTC, rekindling the case against Nav.</p>
+        <p>The investigation and case were dragged out over months and years, and I know 99% of you were too impatient to get this far, so I’ll give the cliff notes for the rest. Basically, Nav would eventually be charged with “spoofing,” which is the purchase of a large block of orders with the intent to cancel them. Spoofing artificially drives prices higher or lower. So the FBI and other concerned parties showed up on the doorstep of Nav’s Hounslow townhome in 2015, and he was extradited to the U.S. The judge learned he was worth $50 million, so he set bail to $7.5 million. Curiously enough though, Nav couldn’t access the $50 million or pay bail, and it was later determined that he’d somehow lost the fortune, seemingly to various shady investment advisors who promised to keep his money safe. (I personally like to think he’s stashed his earnings into a Caribbean account and that he’ll return to his private island once things blow over)</p>
+        <div class="blog-center">
+            <figure>
+                <img src="/static/nav_court.jpg" class="blog-center" alt="Navinder arriving at court.">
+                <figcaption>The ever elusive autist.</figcaption>
+            </figure>
+        </div>
+        <p>Over the next couple of months, Nav worked with investigators and taught them how market abuse happens. He was diagnosed with Asperger’s by a prison doctor, and the judge, sensing the moral dilemma of incarcerating an autist, and sensing Nav had received punishment enough from being scammed out of his $50 million, recommended a year of house arrest.</p>
+        <p>So Nav is currently serving his year of house arrest in the same bedroom where he amassed $50 million. But now he’s penniless at 41.</p>
+        <p class="blog-section">***</p>
+
+    </div>
+
+{% endblock %}

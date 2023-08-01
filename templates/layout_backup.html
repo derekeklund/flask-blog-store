@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {# <meta charset="utf-8"> #}
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>FinRizz Home</title>
+        <!-- Favicon-->
+        <link href="/static/basic T icon.png" rel="icon">
+        <!-- Font Awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />  
+        <!-- For products picture swap -->
+        {# <link href="static/styles_product_pics.css" rel="stylesheet" /> #}
+        <link href="{{ url_for('static',filename='styles_product_pics.css') }}" rel="stylesheet" />
+        <!-- For Conduit ITC Medium -->
+        <link href="https://fonts.cdnfonts.com/css/conduit-itc-medium" rel="stylesheet">
+        <!-- SnipCart CSS -->
+        <link rel="preconnect" href="<https://app.snipcart.com>" />
+        <link rel="preconnect" href="<https://cdn.snipcart.com>" />
+        <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.css" />
+        <!-- Core theme CSS (includes Bootstrap). Has to come after snipcart CSS to overwrite-->
+        <link href="{{ url_for('static',filename='styles.css') }}" rel="stylesheet" />
+        {# OLD WAY... use this for all links within templates folder <link href="static/styles.css" rel="stylesheet" /> #}
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+        <title>Shirt Store: {% block title %}{% endblock %}</title>
+
+
+    </head>
+    <body>
+        <div class="top-banner">
+            <a href="/" target="_blank">FREE SHIPPING ON ORDERS OVER $50</a>
+        </div>
+
+        <div class="header-wrapper">
+
+            <!-- Test toggle menu -->
+
+            {# Collapsible sidebar #}
+            <div id="mySidebar" class="sidebar">
+
+                <div class="sidebar-header">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="sidebar-exit"> × </span></a>
+                    <a href="/">
+                        <img src="{{ url_for('static',filename='fin_rizz_logo_medium.png') }}" alt="logo">
+
+                        {# <img src="{{ url_for('static',filename='whiskey_riff_logo2.png') }}" alt="logo"> #}
+
+                        {# src="static/whiskey_riff_logo2.png" #}
+                    </a>
+                    <div class="sidebar-break"></div>
+                </div>
+
+                {# <a href="/shop_new">New</a>
+                <a href="/shop_best_sellers">Best Sellers</a> #}
+                <a href="/shop_shirts">Shirts</a>
+                <a href="/shop_mugs">Mugs</a>
+                <a href="/shop_hats">Hats</a>
+                <a href="/blog">Blog</a>
+                {# <a href="/shop_sweatshirts">Sweatshirts</a> #}
+            </div>
+
+            <div class="center" id="main">
+                <button class="openbtn" onclick="openNav()">☰ MENU</button>  
+            </div>
+
+            <div class="main-logo">
+                <a href="/" class="logo-link">
+                    <img src="{{ url_for('static',filename='banner icon.png') }}" alt="logo">
+                </a>
+            </div>
+            <div class="center">
+                <form class="d-flex">
+                    <button class="openbtn snipcart-checkout" type="submit">
+                        <i class="bi-cart-fill me-1"></i>
+                        Cart
+                        {# <div class="disappearing-act">Cart</div> #}
+                        <span class="badge text-red ms-new rounded-pill snipcart-items-count"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        {% block header %}{% endblock %}
+
+        <!-- Main Section-->
+        <main>
+            {% block main %}{% endblock %}
+        </main>
+
+        <hr class="border-divisor">
+
+        <!-- Footer-->
+        <footer class="footer-container">
+            <h5 class="info-guy">
+                <em>More Info</em>
+            </h5>
+            <div class="footer">
+                
+                <div class="footer-links">
+                    <ul class="footer-nav">
+                        <li class="links-list">
+                            <a href="/about" class="links-display">About Us</a>
+                        </li>
+                        <li class="links-list">
+                            <a href="/contact" class="links-display">Contact Us</a>
+                        </li>
+                        <li class="links-list">
+                            <a href="shipping" class="links-display">Shipping</a>
+                        </li>
+                        <li class="links-list">
+                            <a href="refunds" class="links-display">Refund Policy</a>
+                        </li>
+                        <li class="links-list">
+                            <a href="privacy" class="links-display">Privacy</a>
+                        </li>
+                        <li class="links-list">
+                            <a href="terms_of_service" class="links-display">Terms of Service</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <img src="{{ url_for('static',filename='cards-accepted.jpg') }}" alt="payment" class="accepted-cards">
+                </div>
+            </div>
+
+            <div class="container"><p class="m-0 text-center">Copyright &copy; Fin Rizz 2023</p></div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <!-- Core theme JS-->
+        <script type="text/javascript" src="/scripts/scripts.js"></script>
+
+        <!-- Blue star rating -->
+        <script>
+            $(':radio').change(function() {
+                console.log('New star rating: ' + this.value);
+            });
+
+            function toggle_div(id) {
+
+            var divelement = document.getElementById(id);
+
+            if(divelement.style.display == 'none')
+                divelement.style.display = 'block';
+            else
+                divelement.style.display = 'none';
+            }
+        </script>
+
+        <!-- Popup for product review submission -->
+        <script>
+            let popup = document.getElementById("popup");
+
+            function openPopup(){
+                popup.classList.add("open-popup");
+            }
+
+            function closePopup(){
+                popup.classList.remove("open-popup");
+            }
+        </script>
+
+        <!-- Collapsible side menu -->
+
+
+        <script>
+        // This adds some nice ellipsis to the description:
+        document.querySelectorAll(".projcard-description").forEach(function(box) {
+            $clamp(box, {clamp: 6});
+        });
+        </script>
+
+        <script>
+            // Sidebar
+            
+            function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            }
+
+            // Product images carousel (https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tab_img_gallery)
+            function switchPic(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            expandImg.src = imgs.src;
+            expandImg.parentElement.style.display = "block";
+            }
+
+            // Quantity adjust
+
+        </script>
+
+        <!-- SnipCart -->
+        <script async src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></script>
+        <div id="snipcart" data-config-modal-style="side" templatesUrl="snipcart-templates.html"   data-api-key="YjYyNjZlMTYtNzc3MS00OTM5LWI5MWUtMGQ0Y2YwYjAyZjMzNjM4MTg4ODQ5MzY0NjY0MzI2" hidden></div>
+
+    </body>
+    <script>
+        // Snipcart
+        window.SnipcartSettings = {
+            // API KEY has to be added (currently public test API key)
+            // loadStrategy: "on-user-interaction",
+            //addProductBehavior: "none", // Only enable this if you don't want the cart screen to pop up (e.g. if I add "Added to cart!" on click)
+            modalStyle: "side",
+            templatesUrl: "snipcart-templates.html",
+            loadCSS: false, // Enable this line to omit loading the default CSS assets for snipcart
+            version: "3.5.0"
+        };
+
+        Snipcart.api.configure('allowed_countries', ['CA']);
+
+
+        (()=>{var a,d;(d=(a=window.SnipcartSettings).version)!=null||(a.version="3.0");var s,S;(S=(s=window.SnipcartSettings).currency)!=null||(s.currency="usd");var l,p;(p=(l=window.SnipcartSettings).timeoutDuration)!=null||(l.timeoutDuration=2750);var w,u;(u=(w=window.SnipcartSettings).domain)!=null||(w.domain="cdn.snipcart.com");var m,g;(g=(m=window.SnipcartSettings).protocol)!=null||(m.protocol="https");var y=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,f=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(f.forEach(t=>document.addEventListener(t,o)),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var c=!1;function o(){if(c)return;c=!0;let t=document.getElementsByTagName("head")[0],e=document.querySelector("#snipcart"),i=document.querySelector(`src[src^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][src$="snipcart.js"]`),n=document.querySelector(`link[href^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][href$="snipcart.css"]`);e||(e=document.createElement("div"),e.id="snipcart",e.setAttribute("hidden","true"),document.body.appendChild(e)),h(e),i||(i=document.createElement("script"),i.src=`${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.js`,i.async=!0,t.appendChild(i)),n||(n=document.createElement("link"),n.rel="stylesheet",n.type="text/css",n.href=`${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.css`,t.prepend(n)),f.forEach(v=>document.removeEventListener(v,o))}function h(t){!y||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
+    </script>
+
+</html>

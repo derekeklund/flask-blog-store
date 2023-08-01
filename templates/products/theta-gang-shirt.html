@@ -1,0 +1,315 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Theta Gang Old English T-Shirt
+{% endblock %}
+
+{% block header %}
+{% endblock %}
+
+{% block main %}
+    <div class="product-page-wrapper">
+
+        <!-- Link header -->
+        <nav class="navigation" role="navigation">
+            <a href="/" title="Back to the frontpage">Home</a>
+            <span aria-hidden="true" class="separator">/</span>
+            <a href="/shop_shirts" title="Back to Shirts">Shirts</a>
+            <span aria-hidden="true" class="separator">/</span>
+            <span>Theta Gang Old English T-Shirt</span>
+        </nav>
+
+        <section class="product-section">
+            <div class="grid-half top-half">
+
+                <!-- Main product image -->
+                <div class="big-product-row">
+                    <div class="product-column-big">
+                        <img src="{{ url_for('static',filename='products/shirts/theta gang shirt.jpg') }}" class="big-img" id="expandedImg" alt="1st-image">
+                    </div>
+                </div>
+
+                <!-- Selectable product images -->
+                <div class="product-row">
+                    <div class="product-column">
+                        <img src="{{ url_for('static',filename='products/shirts/theta gang shirt.jpg') }}" class="mini-pics" alt="1st-image" onclick="switchPic(this)">
+                    </div>
+                    <div class="product-column">
+                        <img src="{{ url_for('static',filename='products/shirts/theta gang first design.png') }}" class="mini-pics" alt="2nd-image" onclick="switchPic(this)">
+                    </div>
+                    <div class="product-column">
+                        <img src="{{ url_for('static',filename='products/shirts/theta gang shirt outside.jpg') }}" class="mini-pics" alt="3rd-image" onclick="switchPic(this)">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="grid-half bottom-half">
+                <h1 class="product-title store-font">Theta Gang Old English T-Shirt</h1>
+                <h5 class="price store-font">$24.99</h5>
+                <div class="form-container">
+                    <div class="cart-wrapper">
+
+                        <label>Size</label>
+                        <div class="size-selection">
+                            <select class="option-selector" id="size">
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="2XL">2XL</option>
+                            </select>
+                        </div>
+
+                        <div class="quantity-wrapper">
+                            <label>Quantity</label>
+                            <div class="qty-container quantity-box">
+                                <button type="button" class="decrement quantity-adjust qty-btn-minus">-</button>
+                                <input type="number" class="quantity quantity-display" value="1"/>
+                                <button type="button" class="increment quantity-adjust qty-btn-plus">+</button>
+                            </div>
+                        </div>
+
+                        <button class="snipcart-add-item cart-btn"
+                            data-item-id="Theta Gang Old English T-Shirt"
+                            data-item-price="24.99"
+                            data-item-url="/products/theta-gang-shirt"
+                            data-item-description="Soft, tri-blend, unisex fit."
+                            data-item-image="/static/products/shirts/theta gang shirt closeup.jpg"
+                            data-item-name="Theta Gang Old English T-Shirt"
+                            data-item-custom1-name="Size"
+                            data-item-custom1-options="XS|S|M|L|XL|2XL"
+                            >               
+                            Add To Cart
+                        </button>
+                        <script>
+                            const addToCart = document.querySelector(".snipcart-add-item");
+                            const quantity = document.querySelector(".quantity");
+                            const increment = document.querySelector(".increment");
+                            const decrement = document.querySelector(".decrement");
+                            const size = document.querySelector(".option-selector");
+
+                            // Pass size selected to cart. Needs work...
+                            size.addEventListener("change", () => {
+                            addToCart.setAttribute("data-item-custom1-options", size.value);
+                            });
+                        
+
+                            // Pass quantity selected to cart
+                            quantity.addEventListener("change", () => {
+                            addToCart.setAttribute("data-item-quantity", quantity.value);
+                            });
+
+                            // Increment button
+                            increment.addEventListener("click", () => {
+                                if (quantity.value < 9) {
+                                const newQuantity = (parseInt(quantity.value) || 0) + 1;
+                                quantity.value = newQuantity;
+                                addToCart.setAttribute("data-item-quantity", newQuantity);
+                                }
+                            });                       
+
+                            // Decrement button
+                            decrement.addEventListener("click", () => {
+                                if (quantity.value > 1) {
+                                const newQuantity = (parseInt(quantity.value) || 0) - 1;
+                                quantity.value = newQuantity;
+                                addToCart.setAttribute("data-item-quantity", newQuantity);
+                                }
+                            });
+                        </script>
+                        
+                    </div>
+
+                    <div class="product-description">
+                        <p>
+                            <b>Trade in style.</b>
+                        </p>
+                        <p>
+                            <em>- Soft tri-blend fabric (50% polyester, 25% cotton, 25% rayon)</em>
+                        </p>
+                        <p>
+                            <em>- Durable and pre-shrunk so the shirt won't change from the first to the 100th wash</em>
+                        </p>
+                        <p>
+                            <em>- Unisex fit. You can share it with your wife or your wife's boyfriend</em>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Star rating sytem -->
+                <div class="review-container">
+                    <div class="review-header">
+                        <h4 class="review-title">CUSTOMER REVIEWS</h4>
+                        <div class="review-subhead">No reviews yet</div>
+
+                        <div class="review-subhead">
+                            <a href="#" onClick="toggle_div('section-to-hide');" class="toggle-form">Write a review</a>
+                        </div>
+                    </div>
+
+                    <div id="section-to-hide" style="display:none" class="rating-section">
+                        <form method="POST">
+
+                            <hr>
+
+                            <div class="form-input contact-name">
+                                <label class="review-label">Name</label>
+                                <input class="form-input-text" placeholder="Your name" name="name" type="text">
+                            </div>
+
+                            <div class="form-input contact-email">
+                                <label class="review-label">Email</label>
+                                <input class="form-input-text" placeholder="Jim.Cramer@example.com" name="email">
+                            </div>
+
+                            <label class="review-label review-label-special">Rating</label>                         
+                            <div class="rating">
+                                <label>
+                                    <input type="radio" name="stars" value="1" />
+                                    <span class="icon">★</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="stars" value="2" />
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="stars" value="3" />
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>   
+                                </label>
+                                <label>
+                                    <input type="radio" name="stars" value="4" />
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="stars" value="5" />
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                </label>
+                            </div>
+
+                            <div class="form-input contact-title">
+                                <label class="review-label">Review Title</label>
+                                <input class="form-input-text" placeholder="Give your review a title" name="title">
+                            </div>
+
+                            <div class="form-input contact-body">
+                                <label class="review-label">Body of Review</label>
+                                <textarea class="form-input-text body-text" placeholder="Tell us what you think" name="body"></textarea>
+                            </div>
+                            
+                            <div class="floaty-test">
+                                <button class="review-form-submit" onclick="openPopup()" value="submit-review" type="button">Submit Review</button>
+                            </div>
+                            
+                            <!--Pop-up stuff -->
+                            <div class="pop-container">
+                                <div class="popup" id="popup">
+                                    <img src="/static/blue-check.png" alt="checkmark">
+                                    <h2>Thank you!</h2>
+                                    <p>Your review has been submitted! It will be posted after a quick review for bad words and such.</p>
+                                    <button type="submit" onclick="closePopup()">OK</button>
+                                </div>
+                            </div>
+
+                        </form> 
+                    </div>
+                </div>               
+            </div>
+
+        </section>
+
+        <div class="section_wrapper">
+            <h3 class="section_title">
+                You might also like...
+                <div class="section_border"></div>
+            </h3>
+        </div>
+
+        <section>
+            <div> <!-- container px-4 px-lg-5 mt-5 -->
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <!-- Card #7 (theta gang mug #1) -->
+                    <div class="new-column mb-5">
+                        <a class="product-link" href="/products/theta-gang-oe-mug">
+                            <div class="card h-100">
+                                <div class="card-img-mine" id="theta-pic1"></div>
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center store-font">
+                                        <h5 class="text-uppercase">Theta Gang OE Mug</h5>
+                                        <div class="price">
+                                            $14.99
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card #8 (theta gang mug #2) -->
+                    <div class="new-column mb-5">
+                        <a class="product-link" href="/products/theta-gang-retro-mug">
+                            <div class="card h-100">
+                                <div class="card-img-mine" id="theta-pic2"></div>
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center store-font">
+                                        <h5 class="text-uppercase">Theta Gang Retro Mug</h5>
+                                        <div class="price">
+                                            $14.99
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card #9 (Subprime shirt) -->
+                    <div class="new-column mb-5">
+                        <a class="product-link" href="/products/subprime-shirt">
+                            <div class="card h-100">
+                                <!-- Product details-->
+                                <div class="card-img-mine" id="subprime-shirt-pic1"></div>
+                                <div class="card-body p-4">
+                                    <div class="text-center store-font">
+                                        <!-- Product name-->
+                                        <h5 class="text-uppercase">Subrime T-Shirt</h5>
+                                        <div class="price"><!-- Product price-->
+                                        $24.99</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card #6 (guh mug) -->
+                    <div class="new-column mb-5">
+                        <a class="product-link" href="/products/guh-mug">
+                            <div class="card h-100">
+                                <div class="card-img-mine" id="guh-pic1"></div>
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center store-font">
+                                        <h5 class="text-uppercase">Guh Mug</h5>
+                                        <div class="price">
+                                            $14.99
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+{% endblock %}

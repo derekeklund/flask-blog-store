@@ -1,0 +1,173 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Shop Mugs
+{% endblock %}
+
+{% block header %}
+{% endblock %}
+
+{% block main %}
+
+        <div class="product-page-wrapper">
+
+        <!-- Link header -->
+        <nav class="navigation" role="navigation">
+            <a href="/" title="Back to the frontpage">Home</a>
+            <span aria-hidden="true" class="separator">/</span>
+            <span>Mugs</span>
+        </nav>
+
+        <div class="section-header">
+            {# <div class="shop-header">Mugs</div> #}
+            <div class="shop-subhead"><em>Mean mugs.</em></div>
+        </div>
+
+        <section>
+
+            <div>
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+                    <!-- MUGS -->
+                    <!-- Card #1 (subprime mug) -->
+                    <div class="new-column mb-5">
+                        <a class="product-link" href="/products/subprime-mug">
+                            <div class="card h-100">
+                                <!-- Product details-->
+                                <div class="card-img-mine" id="subprime-pic1"></div>
+                                <div class="card-body p-4">
+                                    <div class="text-center store-font">
+                                        <h5 class="text-uppercase">Subrime Mug</h5>
+                                        <div class="price">
+                                        $14.99</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card #2 (ftx mug) -->
+                    <div class="new-column mb-5">
+                        <a class="product-link" href="/products/ftx-mug">
+                            <div class="card h-100">
+                                <div class="card-img-mine" id="ftx-pic1"></div>
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center store-font">
+                                        <h5 class="text-uppercase">FTX Retreat Mug</h5>
+                                        <div class="price">
+                                            <span class="text-muted text-decoration-line-through">$17.99</span>
+                                            $12.99
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card #3 (lehman mug) -->
+                    <div class="new-column mb-5">
+                        <a class="product-link" href="/products/lehman-mug">
+                            <div class="card h-100">
+                            <div class="card-img-mine" id="lehman-pic1"></div>
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center store-font">
+                                        <h5 class="text-uppercase">Lehman Brothers Risk Management Mug</h5>
+                                        <div class="price">$14.99
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card #4 (svb bonds mug) -->
+                    <div class="new-column mb-5">
+                        <a class="product-link" href="/products/svb-mug">
+                            <div class="card h-100">
+                                <!-- Product details-->
+                                <div class="card-img-mine" id="svb-pic1"></div>
+                                <div class="card-body p-4">
+                                    <div class="text-center store-font">
+                                        <h5 class="text-uppercase">SVB Bond Analyst Mug</h5>
+                                        <!-- Product price-->
+                                        <div class="price">$14.99</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card #5 (stratton mug) -->
+                    <div class="new-column mb-5">
+                        <a class="product-link" href="/products/stratton-mug">
+                            <div class="card h-100">
+                                <!-- Product details-->
+                                <div class="card-img-mine" id="stratton"></div>
+                                <div class="card-body p-4">
+                                    <div class="text-center store-font">
+                                        <h5 class="text-uppercase">Stratton Oakmont Mug</h5>
+                                        <div class="price">
+                                            <span class="text-muted text-decoration-line-through">$14.99</span>
+                                            $12.99
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card #6 (guh mug) -->
+                    <div class="new-column mb-5">
+                        <a class="product-link" href="/products/guh-mug">
+                            <div class="card h-100">
+                                <div class="card-img-mine" id="guh-pic1"></div>
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center store-font">
+                                        <h5 class="text-uppercase">Guh Mug</h5>
+                                        <div class="price">
+                                            $14.99
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card #7 (theta gang mug #1) -->
+                    <div class="new-column mb-5">
+                        <a class="product-link" href="/products/theta-gang-oe-mug">
+                            <div class="card h-100">
+                                <div class="card-img-mine" id="theta-pic1"></div>
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center store-font">
+                                        <h5 class="text-uppercase">Theta Gang OE Mug</h5>
+                                        <div class="price">
+                                            $14.99
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card #8 (theta gang mug #2) -->
+                    <div class="new-column mb-5">
+                        <a class="product-link" href="/products/theta-gang-retro-mug">
+                            <div class="card h-100">
+                                <div class="card-img-mine" id="theta-pic2"></div>
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center store-font">
+                                        <h5 class="text-uppercase">Theta Gang Retro Mug</h5>
+                                        <div class="price">
+                                            $14.99
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+{% endblock %}
