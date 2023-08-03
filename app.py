@@ -471,4 +471,4 @@ def meet():
     return render_template("meet_the_team.html")
 
 if __name__ == "__main__":
-    app.run(debug=True) # This should be set to false in a production environment
+    app.run(debug=False) # This should be set to false in a production environment
