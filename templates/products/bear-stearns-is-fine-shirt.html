@@ -72,7 +72,7 @@
                             </div>
                         </div>
 
-                        <button class="snipcart-add-item cart-btn"
+                        <button id= "addToCartButton" class="snipcart-add-item cart-btn"
                             data-item-id="Bear Stearns is Fine T-Shirt"
                             data-item-price="19.99"
                             data-item-url="/products/bear-stearns-is-fine-shirt"
@@ -91,12 +91,11 @@
                             const decrement = document.querySelector(".decrement");
                             const size = document.querySelector(".option-selector");
 
-                            // Pass size selected to cart. Needs work...
+                            // Pass size selected to cart
                             size.addEventListener("change", () => {
-                            addToCart.setAttribute("data-item-custom1-options", size.value);
+                            addToCart.setAttribute("data-item-custom1-value", size.value);
                             });
                         
-
                             // Pass quantity selected to cart
                             quantity.addEventListener("change", () => {
                             addToCart.setAttribute("data-item-quantity", quantity.value);

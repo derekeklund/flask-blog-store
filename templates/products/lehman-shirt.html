@@ -89,12 +89,11 @@
                             const decrement = document.querySelector(".decrement");
                             const size = document.querySelector(".option-selector");
 
-                            // Pass size selected to cart. Needs work...
+                            // Pass size selected to cart
                             size.addEventListener("change", () => {
-                            addToCart.setAttribute("data-item-custom1-options", size.value);
+                            addToCart.setAttribute("data-item-custom1-value", size.value);
                             });
                         
-
                             // Pass quantity selected to cart
                             quantity.addEventListener("change", () => {
                             addToCart.setAttribute("data-item-quantity", quantity.value);
