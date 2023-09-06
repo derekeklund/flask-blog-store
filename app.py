@@ -405,6 +405,22 @@ def product_16():
 
     else:
         return render_template("products/svb-bank-run-shirt.html", reviews=reviews)
+    
+@app.route("/products/ftx-hat", methods=["GET", "POST"])
+def product_17():
+    reviews = get_reviews("FTX_Hat")
+
+    if reviews == "No reviews yet for this product.":
+        print("YARRRRRGGGG")
+
+    # print("Reviews: ", reviews)
+
+    if request.method == "POST":
+        send_review_email("FTX Bahamas Hat")
+        return redirect("/products/ftx-hat")
+
+    else:
+        return render_template("products/ftx-hat.html", reviews=reviews)
 
 
 # Shop navigation

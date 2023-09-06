@@ -128,11 +128,13 @@ background-image: url('/static/products/shirts/bear stearns is fine shirt closeu
 }
 
 #ftx-shirt-pic1 {
-background-image: url('/static/products/shirts/ftx bahamas shirt outside.jpg');
+/* background-image: url('/static/products/shirts/ftx bahamas shirt outside.jpg'); */
+background-image: url('/static/products/shirts/ftx bahamas shirt outside 2.0.jpg');
 }
 
 #ftx-shirt-pic1:hover {
-background-image: url('/static/products/shirts/ftx bahamas shirt closeup.jpg');
+/* background-image: url('/static/products/shirts/ftx bahamas shirt closeup.jpg'); */
+background-image: url('/static/products/shirts/ftx bahamas shirt closeup 2.0.jpg');
 }
 
 #theta-gang-shirt-pic1 {
@@ -179,11 +181,13 @@ background-image: url('/static/products/mugs/subprime5.jpg');
 }
 
 #ftx-pic1 {
-background-image: url('/static/products/mugs/ftx-bahamas4.jpg');
+/* background-image: url('/static/products/mugs/ftx-bahamas4.jpg'); */
+background-image: url('/static/products/mugs/ftx bahamas mug inside 2.0.jpg');
 }
 
 #ftx-pic1:hover {
-background-image: url('/static/products/mugs/ftx-bahamas.jpg');
+/* background-image: url('/static/products/mugs/ftx-bahamas.jpg'); */
+background-image: url('/static/products/mugs/ftx bahamas mug 2.0.jpg');
 }
 
 #lehman-pic1 {
@@ -234,3 +238,12 @@ background-image: url('/static/products/mugs/theta-gang3.jpg');
 background-image: url('/static/products/mugs/theta-gang2.jpg');
 }
 
+/* Hat photos */
+
+#ftx-hat-pic1 {
+background-image: url('/static/products/hats/ftx bahamas hat outside 2.0.jpg');
+}
+
+#ftx-hat-pic1:hover {
+background-image: url('/static/products/hats/ftx bahamas hat 2.0.jpg');
+}
