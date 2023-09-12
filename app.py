@@ -124,303 +124,126 @@ def martin():
 # Product navigation
 @app.route("/products/subprime-mug", methods=["GET", "POST"])
 def product_1():
-    reviews = get_reviews("Subprime_Mug") 
+    # reviews = get_reviews("Subprime_Mug") 
 
-    print("Reviews: ", reviews)
+    # print("Reviews: ", reviews)
 
-    avgRating = reviews[0]
-    reviewerName = reviews[1]
+    # avgRating = reviews[0]
+    # reviewerName = reviews[1]
 
-    print("Average Rating: ", avgRating)
-    print("Reviews : ", reviews)
-    reviewTitle = reviews[2]
-    reviewBody = reviews[3]
-    reviewRating = reviews[4]
+    # print("Average Rating: ", avgRating)
+    # print("Reviews : ", reviews)
+    # reviewTitle = reviews[2]
+    # reviewBody = reviews[3]
+    # reviewRating = reviews[4]
 
-    print("Average Rating: ", avgRating)
-    print("Reviewer Name: ", reviewerName)
-    print("Review Title: ", reviewTitle)
-    print("Review Body: ", reviewBody)
-    print("Review Rating: ", reviewRating)
+    # print("Average Rating: ", avgRating)
+    # print("Reviewer Name: ", reviewerName)
+    # print("Review Title: ", reviewTitle)
+    # print("Review Body: ", reviewBody)
+    # # print("Review Rating: ", reviewRating)
 
-    if request.method == "POST":
-        send_review_email("Subprime Mug")
-        return redirect("/products/subprime-mug")
+    # if request.method == "POST":
+    #     send_review_email("Subprime Mug")
+    #     return redirect("/products/subprime-mug")
 
-    # GET (no form submission)
-    else:
-        return render_template("products/subprime-mug.html", reviews=reviews)
+    # # GET (no form submission)
+    # else:
+    #     return render_template("products/subprime-mug.html", reviews=reviews)
     
+    return render_template("products/subprime-mug.html")
 
 @app.route("/products/ftx-mug", methods=["GET", "POST"])
 def product_2():
-    reviews = get_reviews("FTX_Mug")
+    # reviews = get_reviews("FTX_Mug")
 
-    if reviews == "No reviews yet for this product.":
-        print("YARRRRRGGGG")
+    # if reviews == "No reviews yet for this product.":
+    #     print("YARRRRRGGGG")
 
-    # print("Reviews: ", reviews)
+    # # print("Reviews: ", reviews)
 
-    if request.method == "POST":
-        send_review_email("FTX Mug")
-        return redirect("/products/ftx-mug")
+    # if request.method == "POST":
+    #     send_review_email("FTX Mug")
+    #     return redirect("/products/ftx-mug")
 
-    else:
-        return render_template("products/ftx-mug.html", reviews=reviews)
+    # else:
+    #     return render_template("products/ftx-mug.html", reviews=reviews)
     
+    return render_template("products/ftx-mug.html")
 
 @app.route("/products/lehman-mug", methods=["GET", "POST"])
 def product_3():
-    reviews = get_reviews("Lehman_Mug")
-
-    if reviews == "No reviews yet for this product.":
-        print("YARRRRRGGGG")
-
-    # print("Reviews: ", reviews)
-
-    if request.method == "POST":
-        send_review_email("Lehman Mug")
-        return redirect("/products/lehman-mug")
-
-    else:
-        return render_template("products/lehman-mug.html", reviews=reviews)
+    return render_template("products/lehman-mug.html")
 
 
 @app.route("/products/svb-mug", methods=["GET", "POST"])
 def product_4():
-    reviews = get_reviews("SVB_Mug")
-
-    if reviews == "No reviews yet for this product.":
-        print("YARRRRRGGGG")
-
-    # print("Reviews: ", reviews)
-
-    if request.method == "POST":
-        send_review_email("SVB Mug")
-        return redirect("/products/svb-mug")
-
-    else:
-        return render_template("products/svb-mug.html", reviews=reviews)
+    return render_template("products/svb-mug.html")
 
 
 @app.route("/products/stratton-mug", methods=["GET", "POST"])
 def product_5():
-    reviews = get_reviews("Stratton_Mug")
-
-    if reviews == "No reviews yet for this product.":
-        print("YARRRRRGGGG")
-
-    # print("Reviews: ", reviews)
-
-    if request.method == "POST":
-        send_review_email("Stratton Mug")
-        return redirect("/products/stratton-mug")
-
-    else:
-        return render_template("products/stratton-mug.html", reviews=reviews)
+    return render_template("products/stratton-mug.html")
 
 
 @app.route("/products/guh-mug", methods=["GET", "POST"])
 def product_6():
-    reviews = get_reviews("Guh_Mug")
-
-    if reviews == "No reviews yet for this product.":
-        print("YARRRRRGGGG")
-
-    # print("Reviews: ", reviews)
-
-    if request.method == "POST":
-        send_review_email("Guh Mug")
-        return redirect("/products/guh-mug")
-
-    else:
-        return render_template("products/guh-mug.html", reviews=reviews)
+    return render_template("products/guh-mug.html")
 
 
 @app.route("/products/theta-gang-oe-mug", methods=["GET", "POST"])
 def product_7():
-    reviews = get_reviews("Theta_OE_Mug")
-
-    if reviews == "No reviews yet for this product.":
-        print("YARRRRRGGGG")
-
-    # print("Reviews: ", reviews)
-
-    if request.method == "POST":
-        send_review_email("Theta Gang OE Mug")
-        return redirect("/products/theta-gang-oe-mug")
-
-    else:
-        return render_template("products/theta-gang-oe-mug.html", reviews=reviews)
+    return render_template("products/theta-gang-oe-mug.html")
 
 
 @app.route("/products/theta-gang-retro-mug", methods=["GET", "POST"])
 def product_8():
-    reviews = get_reviews("Theta_Retro_Mug")
-
-    if reviews == "No reviews yet for this product.":
-        print("YARRRRRGGGG")
-
-    # print("Reviews: ", reviews)
-
-    if request.method == "POST":
-        send_review_email("Theta Gang Retro Mug")
-        return redirect("/products/theta-gang-retro-mug")
-
-    else:
-        return render_template("products/theta-gang-retro-mug.html", reviews=reviews)
+    return render_template("products/theta-gang-retro-mug.html")
 
 
 @app.route("/products/subprime-shirt", methods=["GET", "POST"])
 def product_9():
-    reviews = get_reviews("Subprime_Shirt")
-
-    if reviews == "No reviews yet for this product.":
-        print("YARRRRRGGGG")
-
-    # print("Reviews: ", reviews)
-
-    if request.method == "POST":
-        send_review_email("Subprime Shirt")
-        return redirect("/products/subprime-shirt")
-
-    else:
-        return render_template("products/subprime-shirt.html", reviews=reviews)
+    return render_template("products/subprime-shirt.html")
 
 
 @app.route("/products/ftx-shirt", methods=["GET", "POST"])
 def product_10():
-    reviews = get_reviews("FTX_Shirt")
-
-    if reviews == "No reviews yet for this product.":
-        print("YARRRRRGGGG")
-
-    # print("Reviews: ", reviews)
-
-    if request.method == "POST":
-        send_review_email("FTX Shirt")
-        return redirect("/products/ftx-shirt")
-
-    else:
-        return render_template("products/ftx-shirt.html", reviews=reviews)
+    return render_template("products/ftx-shirt.html")
 
 
 @app.route("/products/lehman-shirt", methods=["GET", "POST"])
 def product_11():
-    reviews = get_reviews("Lehman_Shirt")
-
-    if reviews == "No reviews yet for this product.":
-        print("YARRRRRGGGG")
-
-    # print("Reviews: ", reviews)
-
-    if request.method == "POST":
-        send_review_email("Lehman Shirt")
-        return redirect("/products/lehman-shirt")
-
-    else:
-        return render_template("products/lehman-shirt.html", reviews=reviews)
+    return render_template("products/lehman-shirt.html")
 
 
 @app.route("/products/bear-stearns-intern-shirt", methods=["GET", "POST"])
 def product_12():
-    reviews = get_reviews("Bear_Stearns_Intern_Shirt")
-
-    if reviews == "No reviews yet for this product.":
-        print("YARRRRRGGGG")
-
-    # print("Reviews: ", reviews)
-
-    if request.method == "POST":
-        send_review_email("Bear Stearns Intern Shirt")
-        return redirect("/products/bear-stearns-intern-shirt")
-
-    else:
-        return render_template("products/bear-stearns-intern-shirt.html", reviews=reviews)
+    return render_template("products/bear-stearns-intern-shirt.html")
 
 
 @app.route("/products/bear-stearns-is-fine-shirt", methods=["GET", "POST"])
 def product_13():
-    reviews = get_reviews("Bear_Stearns_Is_Fine_Shirt")
-
-    if reviews == "No reviews yet for this product.":
-        print("YARRRRRGGGG")
-
-    # print("Reviews: ", reviews)
-
-    if request.method == "POST":
-        send_review_email("Bear Stearns Is Fine Shirt")
-        return redirect("/products/bear-stearns-is-fine-shirt")
-
-    else:
-        return render_template("products/bear-stearns-is-fine-shirt.html", reviews=reviews)
+    return render_template("products/bear-stearns-is-fine-shirt.html")
 
 
 @app.route("/products/svb-bonds-shirt", methods=["GET", "POST"])
 def product_14():
-    reviews = get_reviews("SVB_Bonds_Shirt")
-
-    if reviews == "No reviews yet for this product.":
-        print("YARRRRRGGGG")
-
-    # print("Reviews: ", reviews)
-
-    if request.method == "POST":
-        send_review_email("SVB Bonds Shirt")
-        return redirect("/products/svb-bonds-shirt")
-
-    else:
-        return render_template("products/svb-bonds-shirt.html", reviews=reviews)
+    return render_template("products/svb-bonds-shirt.html")
 
 
 @app.route("/products/theta-gang-shirt", methods=["GET", "POST"])
 def product_15():
-    reviews = get_reviews("Theta_Gang_Shirt")
-
-    if reviews == "No reviews yet for this product.":
-        print("YARRRRRGGGG")
-
-    # print("Reviews: ", reviews)
-
-    if request.method == "POST":
-        send_review_email("Theta Gang Shirt")
-        return redirect("/products/theta-gang-shirt")
-
-    else:
-        return render_template("products/theta-gang-shirt.html", reviews=reviews)
+    return render_template("products/theta-gang-shirt.html")
 
 
 @app.route("/products/svb-bank-run-shirt", methods=["GET", "POST"])
 def product_16():
-    reviews = get_reviews("SVB_Bank_Run_Shirt")
-
-    if reviews == "No reviews yet for this product.":
-        print("YARRRRRGGGG")
-
-    # print("Reviews: ", reviews)
-
-    if request.method == "POST":
-        send_review_email("SVB Bank Run Shirt")
-        return redirect("/products/svb-bank-run-shirt")
-
-    else:
-        return render_template("products/svb-bank-run-shirt.html", reviews=reviews)
+    return render_template("products/svb-bank-run-shirt.html")
+    
     
 @app.route("/products/ftx-hat", methods=["GET", "POST"])
 def product_17():
-    reviews = get_reviews("FTX_Hat")
-
-    if reviews == "No reviews yet for this product.":
-        print("YARRRRRGGGG")
-
-    # print("Reviews: ", reviews)
-
-    if request.method == "POST":
-        send_review_email("FTX Bahamas Hat")
-        return redirect("/products/ftx-hat")
-
-    else:
-        return render_template("products/ftx-hat.html", reviews=reviews)
+    return render_template("products/ftx-hat.html")
 
 
 # Shop navigation
