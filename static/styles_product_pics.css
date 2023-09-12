@@ -87,69 +87,69 @@ background-image: url('/static/cramer sistine chapel retouched.png');
 
 /* Shirt photos */
 
-#subprime-shirt-pic1 {
+#subprime-shirt-pic1:hover {
 background-image: url('/static/products/shirts/subprime shirt outside.jpg');
 }
 
-#subprime-shirt-pic1:hover {
+#subprime-shirt-pic1 {
 background-image: url('/static/products/shirts/subprime shirt closeup.jpg');
 }
 
-#svb-bonds-shirt-pic1 {
+#svb-bonds-shirt-pic1:hover {
 background-image: url('/static/products/shirts/svb bonds shirt outside2.jpg');
 }
 
-#svb-bonds-shirt-pic1:hover {
+#svb-bonds-shirt-pic1 {
 background-image: url('/static/products/shirts/svb bonds shirt closeup.jpg');
 }
 
-#lehman-shirt-pic1 {
+#lehman-shirt-pic1:hover {
 background-image: url('/static/products/shirts/lehman-shirt outside.jpg');
 }
 
-#lehman-shirt-pic1:hover {
+#lehman-shirt-pic1 {
 background-image: url('/static/products/shirts/lehman-shirt closeup.jpg');
 }
 
-#bear-intern-shirt-pic1 {
+#bear-intern-shirt-pic1:hover {
 background-image: url('/static/products/shirts/bear stearns intern shirt outside2.jpg');
 }
 
-#bear-intern-shirt-pic1:hover {
+#bear-intern-shirt-pic1 {
 background-image: url('/static/products/shirts/bear stearns intern shirt closeup.jpg');
 }
 
-#bear-fine-shirt-pic1 {
+#bear-fine-shirt-pic1:hover {
 background-image: url('/static/products/shirts/bear stearns is fine shirt outside.jpg');
 }
 
-#bear-fine-shirt-pic1:hover {
+#bear-fine-shirt-pic1 {
 background-image: url('/static/products/shirts/bear stearns is fine shirt closeup.jpg');
 }
 
-#ftx-shirt-pic1 {
+#ftx-shirt-pic1:hover {
 /* background-image: url('/static/products/shirts/ftx bahamas shirt outside.jpg'); */
 background-image: url('/static/products/shirts/ftx bahamas shirt outside 2.0.jpg');
 }
 
-#ftx-shirt-pic1:hover {
+#ftx-shirt-pic1 {
 /* background-image: url('/static/products/shirts/ftx bahamas shirt closeup.jpg'); */
 background-image: url('/static/products/shirts/ftx bahamas shirt closeup 2.0.jpg');
 }
 
-#theta-gang-shirt-pic1 {
+#theta-gang-shirt-pic1:hover {
 background-image: url('/static/products/shirts/theta gang shirt outside.jpg');
 }
 
-#theta-gang-shirt-pic1:hover {
+#theta-gang-shirt-pic1 {
 background-image: url('/static/products/shirts/theta gang shirt closeup.jpg');
 }
 
-#svb-run-shirt-pic1 {
+#svb-run-shirt-pic1:hover {
 background-image: url('/static/products/shirts/svb bank run shirt outside.jpg');
 }
 
-#svb-run-shirt-pic1:hover {
+#svb-run-shirt-pic1 {
 background-image: url('/static/products/shirts/svb bank run shirt closeup.jpg');
 }
 
@@ -240,10 +240,10 @@ background-image: url('/static/products/mugs/theta-gang2.jpg');
 
 /* Hat photos */
 
-#ftx-hat-pic1 {
+#ftx-hat-pic1:hover {
 background-image: url('/static/products/hats/ftx bahamas hat outside 2.0.jpg');
 }
 
-#ftx-hat-pic1:hover {
+#ftx-hat-pic1 {
 background-image: url('/static/products/hats/ftx bahamas hat 2.0.jpg');
 }

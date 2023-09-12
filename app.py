@@ -452,6 +452,10 @@ def shop_mugs():
 def shop_all():
     return render_template("shop_all.html")
 
+@app.route("/shop_collections", methods=["GET", "POST"])
+def shop_collections():
+    return render_template("shop_collections.html")
+
 @app.route("/blog", methods=["GET", "POST"])
 def blog():
     return render_template("blog.html")

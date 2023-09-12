@@ -30,8 +30,23 @@
 
     </head>
     <body id="body">
-        <div class="top-banner">
-            <a href="/" target="_blank">FREE SHIPPING ON ORDERS OVER $50</a>
+    
+        <div class="top-banner" onclick="openBanner()">
+            FREE SHIPPING ON ORDERS OVER $50
+        </div>
+
+        <!-- Banner pop-up -->
+        <div class="pop-container">
+            <div class="popup" id="bannerPopup">
+                {# <img src="/static/blue-check.png" alt="checkmark"> #}
+                <br>
+                <h2>No tricks or stipulations!</h2>
+                <br>
+                <hr>
+                <br>
+                <p>Just purchase items totaling more than $50 and shipping will automatically adjust to be free of charge!</p>
+                <button type="submit" onclick="closeBanner()">OK</button>
+            </div>
         </div>
 
         <div class="header-wrapper">
@@ -59,6 +74,8 @@
                 </ul>
 
                 <ul>
+                    <li><a href="/shop_best_sellers">Best Sellers</a></li>
+                    <li><a href="/shop_collections">Collections</a></li>
                     <li><a href="/shop_shirts">Shirts</a></li>
                     <li><a href="/shop_mugs">Mugs</a></li>
                     <li><a href="/shop_hats">Hats</a></li>
@@ -77,6 +94,9 @@
                 <a href="/" class="logo-link">
                     <img src="{{ url_for('static',filename='banner icon.png') }}" alt="logo">
                 </a>
+
+                {# <div class="center openbtn">BLOG</div>
+                <div class="center openbtn">SHOP</div> #}
             </div>
             <div class="center">
                 <form class="d-flex">
@@ -162,6 +182,7 @@
         <!-- Popup for product review submission -->
         <script>
             let popup = document.getElementById("popup");
+            let bannerPopup = document.getElementById("bannerPopup");
 
             function openPopup(){
                 popup.classList.add("open-popup");
@@ -169,6 +190,14 @@
 
             function closePopup(){
                 popup.classList.remove("open-popup");
+            }
+
+            function openBanner(){
+                bannerPopup.classList.add("open-popup");
+            }
+
+            function closeBanner(){
+                bannerPopup.classList.remove("open-popup");
             }
         </script>
 
