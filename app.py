@@ -1,4 +1,4 @@
-from flask import Flask, render_template, session, request, g, redirect
+from flask import Flask, render_template, session, request, g, redirect, send_from_directory
 # from flask_session import Session
 # from flask_session.__init__ import Session
 import sqlite3
@@ -312,6 +312,12 @@ def terms():
 @app.route("/meet_the_team", methods=["GET", "POST"])
 def meet():
     return render_template("meet_the_team.html")
+
+# Sitemap routing
+@app.route('/sitemap.xml')
+def static_from_root():
+    return send_from_directory(app.static_folder, request.path[1:])
+
 
 if __name__ == "__main__":
     app.run(debug=False) # This should be set to false in a production environment
