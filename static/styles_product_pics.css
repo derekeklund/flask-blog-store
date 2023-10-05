@@ -157,7 +157,7 @@ background-image: url('/static/products/shirts/svb bank run shirt closeup.jpg');
 /* Mug photos */
 
 #subprime-pic1 {
-background-image: url('/static/products/mugs/subprime2.jpg');
+background-image: url('/static/products/mugs/subprime2.webp');
 }
 
 #subprime-pic1:hover {
@@ -191,7 +191,7 @@ background-image: url('/static/products/mugs/ftx bahamas mug 2.0.jpg');
 }
 
 #lehman-pic1 {
-background-image: url('/static/products/mugs/lehman5.jpg');
+background-image: url('/static/products/mugs/lehman5.webp');
 }
 
 #lehman-pic1:hover {
@@ -199,7 +199,7 @@ background-image: url('/static/products/mugs/lehman.jpg');
 }
 
 #svb-pic1 {
-background-image: url('/static/products/mugs/svb bonds3.jpg');
+background-image: url('/static/products/mugs/svb-bonds3.webp');
 }
 
 #svb-pic1:hover {
@@ -235,7 +235,7 @@ background-image: url('/static/products/mugs/theta-gang3.jpg');
 }
 
 #theta-pic2:hover {
-background-image: url('/static/products/mugs/theta-gang2.jpg');
+background-image: url('/static/products/mugs/theta-gang2.webp');
 }
 
 /* Hat photos */
