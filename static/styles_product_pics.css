@@ -161,33 +161,33 @@ background-image: url('/static/products/mugs/subprime2.webp');
 }
 
 #subprime-pic1:hover {
-background-image: url('/static/products/mugs/subprime.jpg');
+background-image: url('/static/products/mugs/subprime.webp');
 }
     
 #subprime-pic2 {
-background-image: url('/static/products/mugs/subprime.jpg');
+background-image: url('/static/products/mugs/subprime.webp');
 }
 
 #subprime-pic3 {
-background-image: url('/static/products/mugs/subprime3.jpg');
+background-image: url('/static/products/mugs/subprime3.webp');
 }
 
 #subprime-pic4 {
-background-image: url('/static/products/mugs/subprime4.jpg');
+background-image: url('/static/products/mugs/subprime4.webp');
 }
 
 #subprime-pic5 {
-background-image: url('/static/products/mugs/subprime5.jpg');
+background-image: url('/static/products/mugs/subprime5.webp');
 }
 
 #ftx-pic1 {
 /* background-image: url('/static/products/mugs/ftx-bahamas4.jpg'); */
-background-image: url('/static/products/mugs/ftx bahamas mug inside 2.0.jpg');
+background-image: url('/static/products/mugs/ftx bahamas mug inside 2.0.webp');
 }
 
 #ftx-pic1:hover {
 /* background-image: url('/static/products/mugs/ftx-bahamas.jpg'); */
-background-image: url('/static/products/mugs/ftx bahamas mug 2.0.jpg');
+background-image: url('/static/products/mugs/ftx bahamas mug 2.0.webp');
 }
 
 #lehman-pic1 {
@@ -195,7 +195,7 @@ background-image: url('/static/products/mugs/lehman5.webp');
 }
 
 #lehman-pic1:hover {
-background-image: url('/static/products/mugs/lehman.jpg');
+background-image: url('/static/products/mugs/lehman.webp');
 }
 
 #svb-pic1 {
@@ -203,35 +203,35 @@ background-image: url('/static/products/mugs/svb-bonds3.webp');
 }
 
 #svb-pic1:hover {
-background-image: url('/static/products/mugs/svb bonds.jpg');
+background-image: url('/static/products/mugs/svb bonds.webp');
 }
 
 #stratton {
-background-image: url('/static/products/mugs/stratton2.jpg');
+background-image: url('/static/products/mugs/stratton2.webp');
 }
 
 #stratton:hover {
-background-image: url('/static/products/mugs/stratton.jpg');
+background-image: url('/static/products/mugs/stratton.webp');
 }
 
 #guh-pic1 {
-background-image: url('/static/products/mugs/guh4.jpg');
+background-image: url('/static/products/mugs/guh4.webp');
 }
 
 #guh-pic1:hover {
-background-image: url('/static/products/mugs/guh.jpg');
+background-image: url('/static/products/mugs/guh.webp');
 }
 
 #theta-pic1 {
-background-image: url('/static/products/mugs/theta-gang4.jpg');
+background-image: url('/static/products/mugs/theta-gang4.webp');
 }
 
 #theta-pic1:hover {
-background-image: url('/static/products/mugs/theta-gang1.jpg');
+background-image: url('/static/products/mugs/theta-gang1.webp');
 }
 
 #theta-pic2 {
-background-image: url('/static/products/mugs/theta-gang3.jpg');
+background-image: url('/static/products/mugs/theta-gang3.webp');
 }
 
 #theta-pic2:hover {
@@ -241,9 +241,9 @@ background-image: url('/static/products/mugs/theta-gang2.webp');
 /* Hat photos */
 
 #ftx-hat-pic1:hover {
-background-image: url('/static/products/hats/ftx bahamas hat outside 2.0.jpg');
+background-image: url('/static/products/hats/ftx bahamas hat outside 2.0.webp');
 }
 
 #ftx-hat-pic1 {
-background-image: url('/static/products/hats/ftx bahamas hat 2.0.jpg');
+background-image: url('/static/products/hats/ftx bahamas hat 2.0.webp');
 }
