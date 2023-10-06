@@ -10951,14 +10951,14 @@ main {
   font-size: 20px;
   cursor: pointer;
   background-color: #fff;
-  color: #d9484d;
+  color: #d63d42;
   padding: 10px 15px;
   border: none;
   border-radius: 0.375rem;
 }
 
 .openbtn:hover {
-  background-color: #d9484d;
+  background-color: #d63d42;
   color: #fff;
 }
 
@@ -11037,9 +11037,9 @@ main {
 
 .shop {
   margin-top: 30px;
-  background: #d9484d;
+  background: #d63d42;
   color: white;
-  border: 2px solid #d9484d;
+  border: 2px solid #d63d42;
   display: inline-block;
   padding: 7.5px 15px 8.5px;
   font-family: "Open Sans", sans-serif;
@@ -11180,7 +11180,7 @@ a:hover {
 }
 
 .price {
-  color: #d9484d;
+  color: #d63d42;
 }
 
 #picture-swap {
@@ -11405,8 +11405,8 @@ select {
 
 .cart-btn {
   background: transparent;
-  color: #d9484d;
-  border: 2px solid #d9484d;
+  color: #d63d42;
+  border: 2px solid #d63d42;
   min-width: 300px;
   padding: 7.5px 15px 8.5px;
   border-radius: 3px;
@@ -11711,7 +11711,7 @@ select {
 }
 
 .links-display:hover {
-  color: #d9484d;
+  color: #d63d42;
 }
 
 .border-divisor {
