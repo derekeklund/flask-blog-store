@@ -88,69 +88,69 @@ background-image: url('/static/cramer sistine chapel retouched.png');
 /* Shirt photos */
 
 #subprime-shirt-pic1:hover {
-background-image: url('/static/products/shirts/subprime shirt outside.jpg');
+background-image: url('/static/products/shirts/subprime shirt outside.webp');
 }
 
 #subprime-shirt-pic1 {
-background-image: url('/static/products/shirts/subprime shirt closeup.jpg');
+background-image: url('/static/products/shirts/subprime shirt closeup.webp');
 }
 
 #svb-bonds-shirt-pic1:hover {
-background-image: url('/static/products/shirts/svb bonds shirt outside2.jpg');
+background-image: url('/static/products/shirts/svb-bonds-shirt-outside2.webp');
 }
 
 #svb-bonds-shirt-pic1 {
-background-image: url('/static/products/shirts/svb bonds shirt closeup.jpg');
+background-image: url('/static/products/shirts/svb-bonds-shirt-closeup.webp');
 }
 
 #lehman-shirt-pic1:hover {
-background-image: url('/static/products/shirts/lehman-shirt outside.jpg');
+background-image: url('/static/products/shirts/lehman-shirt outside.webp');
 }
 
 #lehman-shirt-pic1 {
-background-image: url('/static/products/shirts/lehman-shirt closeup.jpg');
+background-image: url('/static/products/shirts/lehman-shirt closeup.webp');
 }
 
 #bear-intern-shirt-pic1:hover {
-background-image: url('/static/products/shirts/bear stearns intern shirt outside2.jpg');
+background-image: url('/static/products/shirts/bear stearns intern shirt outside2.webp');
 }
 
 #bear-intern-shirt-pic1 {
-background-image: url('/static/products/shirts/bear stearns intern shirt closeup.jpg');
+background-image: url('/static/products/shirts/bear stearns intern shirt closeup.webp');
 }
 
 #bear-fine-shirt-pic1:hover {
-background-image: url('/static/products/shirts/bear stearns is fine shirt outside.jpg');
+background-image: url('/static/products/shirts/bear stearns is fine shirt outside.webp');
 }
 
 #bear-fine-shirt-pic1 {
-background-image: url('/static/products/shirts/bear stearns is fine shirt closeup.jpg');
+background-image: url('/static/products/shirts/bear stearns is fine shirt closeup.webp');
 }
 
 #ftx-shirt-pic1:hover {
 /* background-image: url('/static/products/shirts/ftx bahamas shirt outside.jpg'); */
-background-image: url('/static/products/shirts/ftx bahamas shirt outside 2.0.jpg');
+background-image: url('/static/products/shirts/ftx bahamas shirt outside 2.0.webp');
 }
 
 #ftx-shirt-pic1 {
 /* background-image: url('/static/products/shirts/ftx bahamas shirt closeup.jpg'); */
-background-image: url('/static/products/shirts/ftx bahamas shirt closeup 2.0.jpg');
+background-image: url('/static/products/shirts/ftx bahamas shirt closeup 2.0.webp');
 }
 
 #theta-gang-shirt-pic1:hover {
-background-image: url('/static/products/shirts/theta gang shirt outside.jpg');
+background-image: url('/static/products/shirts/theta gang shirt outside.webp');
 }
 
 #theta-gang-shirt-pic1 {
-background-image: url('/static/products/shirts/theta gang shirt closeup.jpg');
+background-image: url('/static/products/shirts/theta gang shirt closeup.webp');
 }
 
 #svb-run-shirt-pic1:hover {
-background-image: url('/static/products/shirts/svb bank run shirt outside.jpg');
+background-image: url('/static/products/shirts/svb bank run shirt outside.webp');
 }
 
 #svb-run-shirt-pic1 {
-background-image: url('/static/products/shirts/svb bank run shirt closeup.jpg');
+background-image: url('/static/products/shirts/svb bank run shirt closeup.webp');
 }
 
 
@@ -181,13 +181,11 @@ background-image: url('/static/products/mugs/subprime5.webp');
 }
 
 #ftx-pic1 {
-/* background-image: url('/static/products/mugs/ftx-bahamas4.jpg'); */
-background-image: url('/static/products/mugs/ftx bahamas mug inside 2.0.webp');
+background-image: url('/static/products/mugs/ftx-bahamas-mug-inside-2.0.webp');
 }
 
 #ftx-pic1:hover {
-/* background-image: url('/static/products/mugs/ftx-bahamas.jpg'); */
-background-image: url('/static/products/mugs/ftx bahamas mug 2.0.webp');
+background-image: url('/static/products/mugs/ftx-bahamas-mug-2.0.webp');
 }
 
 #lehman-pic1 {
@@ -203,7 +201,7 @@ background-image: url('/static/products/mugs/svb-bonds3.webp');
 }
 
 #svb-pic1:hover {
-background-image: url('/static/products/mugs/svb bonds.webp');
+background-image: url('/static/products/mugs/svb-bonds.webp');
 }
 
 #stratton {
