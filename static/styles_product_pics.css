@@ -1,4 +1,4 @@
-#product-pic1 {
+/* #product-pic1 {
     background-image: url('/static/products/product_1.png');
 }
   
@@ -60,29 +60,18 @@ background-image: url('/static/products/product_8.png');
 
 #product-pic8:hover {
 background-image: url('/static/products/product_8_alt.png');
-}
+} */
 
 /* Banner image */
 
-/* @media only screen and (min-width : 768px) {
-    #banner-img{
-        background-image: url('static/banner-img4.png');
-    }
-}
-@media only screen and (min-width : 100px) {
-    #banner-img{
-        background-image: url('static/cramer sistine chapel retouched.png');
-    }
-} */
-
 @media only screen and (max-width : 400px) {
     #banner-img {
-        background-image:  url('/static/cramer sistine chapel retouched.png');
+        background-image:  url('/static/cramer-sistine-chapel-retouched.webp');
     }
 }
 
 #subprime-shirt-pic20 {
-background-image: url('/static/cramer sistine chapel retouched.png');
+background-image: url('/static/cramer-sistine-chapel-retouched.webp');
 }
 
 /* Shirt photos */
@@ -128,12 +117,10 @@ background-image: url('/static/products/shirts/bear stearns is fine shirt closeu
 }
 
 #ftx-shirt-pic1:hover {
-/* background-image: url('/static/products/shirts/ftx bahamas shirt outside.jpg'); */
 background-image: url('/static/products/shirts/ftx bahamas shirt outside 2.0.webp');
 }
 
 #ftx-shirt-pic1 {
-/* background-image: url('/static/products/shirts/ftx bahamas shirt closeup.jpg'); */
 background-image: url('/static/products/shirts/ftx bahamas shirt closeup 2.0.webp');
 }
 
