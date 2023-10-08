@@ -25,7 +25,6 @@
                 <!-- Main product image -->
                 <div class="big-product-row">
                     <div class="product-column-big">
-                        {# Original: ftx-bahamas.jpg #}
                         <img src="{{ url_for('static',filename='products/mugs/ftx-bahamas-mug-2.0.webp') }}" class="big-img" id="expandedImg" alt="1st-image">
                     </div>
                 </div>
@@ -33,15 +32,12 @@
                 <!-- Selectable product images -->
                 <div class="product-row">
                     <div class="product-column">
-                        {# Original: ftx-bahamas.jpg #}
                         <img src="{{ url_for('static',filename='products/mugs/ftx-bahamas-mug-2.0.webp') }}" class="mini-pics" alt="1st-image" onclick="switchPic(this)">
                     </div>
                     <div class="product-column">
-                        {# Original: ftx design.png #}
                         <img src="{{ url_for('static',filename='products/designs/ftx bahamas design 2.0.webp') }}" class="mini-pics" alt="2nd-image" onclick="switchPic(this)">
                     </div>
                     <div class="product-column">
-                        {# Original: ftx-bahamas4.jpg #}
                         <img src="{{ url_for('static',filename='products/mugs/ftx-bahamas-mug-inside-2.0.webp') }}" class="mini-pics" alt="3rd-image" onclick="switchPic(this)">
                     </div>
                 </div>
@@ -70,7 +66,7 @@
                             data-item-price="15.00"
                             data-item-url="/products/ftx-mug"
                             data-item-description="Classic ceramic mug (11 oz)."
-                            data-item-image="/static/products/mugs/ftx bahamas mug 2.0.jpg"
+                            data-item-image="/static/products/mugs/ftx-bahamas-mug-2.0.webp"
                             data-item-name="FTX Bahamas Retreat Mug"
                             >               
                             Add To Cart
@@ -258,8 +254,8 @@
                                         <h5 class="text-uppercase">FTX Bahamas Retreat T-Shirt</h5>
                                         <!-- Product price-->
                                         <div class="price">
-                                            <span class="text-muted text-decoration-line-through">$29.99</span>
-                                            $24.00
+                                            {# <span class="text-muted text-decoration-line-through">$29.99</span> #}
+                                            $28.00
                                         </div>
                                     </div>
                                 </div>
