@@ -143,15 +143,15 @@ def product_1():
     # print("Review Body: ", reviewBody)
     # # print("Review Rating: ", reviewRating)
 
-    # if request.method == "POST":
-    #     send_review_email("Subprime Mug")
-    #     return redirect("/products/subprime-mug")
+    if request.method == "POST":
+        send_review_email("Subprime Mug")
+        return redirect("/products/subprime-mug")
 
-    # # GET (no form submission)
-    # else:
-    #     return render_template("products/subprime-mug.html", reviews=reviews)
+    # GET (no form submission)
+    else:
+        return render_template("products/subprime-mug.html")
     
-    return render_template("products/subprime-mug.html")
+    # return render_template("products/subprime-mug.html")
 
 @app.route("/products/ftx-mug", methods=["GET", "POST"])
 def product_2():
@@ -162,89 +162,180 @@ def product_2():
 
     # # print("Reviews: ", reviews)
 
-    # if request.method == "POST":
-    #     send_review_email("FTX Mug")
-    #     return redirect("/products/ftx-mug")
+    if request.method == "POST":
+        send_review_email("FTX Mug")
+        return redirect("/products/ftx-mug")
 
-    # else:
-    #     return render_template("products/ftx-mug.html", reviews=reviews)
+    else:
+        return render_template("products/ftx-mug.html")
     
-    return render_template("products/ftx-mug.html")
+    # return render_template("products/ftx-mug.html")
 
 @app.route("/products/lehman-mug", methods=["GET", "POST"])
 def product_3():
-    return render_template("products/lehman-mug.html")
+    # return render_template("products/lehman-mug.html")
+
+    if request.method == "POST":
+        send_review_email("Lehman Mug")
+        return redirect("/products/lehman-mug")
+
+    else:
+        return render_template("products/lehman-mug.html")
 
 
 @app.route("/products/svb-mug", methods=["GET", "POST"])
 def product_4():
-    return render_template("products/svb-mug.html")
+    # return render_template("products/svb-mug.html")
 
+    if request.method == "POST":
+        send_review_email("SVB Mug")
+        return redirect("/products/svb-mug")
+
+    else:
+        return render_template("products/svb-mug.html")
 
 @app.route("/products/stratton-mug", methods=["GET", "POST"])
 def product_5():
-    return render_template("products/stratton-mug.html")
+    # return render_template("products/stratton-mug.html")
 
+    if request.method == "POST":
+        send_review_email("Stratton Mug")
+        return redirect("/products/stratton-mug")
+
+    else:
+        return render_template("products/stratton-mug.html")
 
 @app.route("/products/guh-mug", methods=["GET", "POST"])
 def product_6():
-    return render_template("products/guh-mug.html")
+    # return render_template("products/guh-mug.html")
 
+    if request.method == "POST":
+        send_review_email("Guh Mug")
+        return redirect("/products/guh-mug")
+
+    else:
+        return render_template("products/guh-mug.html")
 
 @app.route("/products/theta-gang-oe-mug", methods=["GET", "POST"])
 def product_7():
-    return render_template("products/theta-gang-oe-mug.html")
+    # return render_template("products/theta-gang-oe-mug.html")
 
+    if request.method == "POST":
+        send_review_email("Theta Gang OE Mug")
+        return redirect("/products/theta-gang-oe-mug")
+
+    else:
+        return render_template("products/theta-gang-oe-mug.html")
 
 @app.route("/products/theta-gang-retro-mug", methods=["GET", "POST"])
 def product_8():
-    return render_template("products/theta-gang-retro-mug.html")
+    # return render_template("products/theta-gang-retro-mug.html")
 
+    if request.method == "POST":
+        send_review_email("Theta Gang Retro Mug")
+        return redirect("/products/theta-gang-retro-mug")
+
+    else:
+        return render_template("products/theta-gang-retro-mug.html")
 
 @app.route("/products/subprime-shirt", methods=["GET", "POST"])
 def product_9():
-    return render_template("products/subprime-shirt.html")
+    # eturn render_template("products/subprime-shirt.html")
 
+    if request.method == "POST":
+        send_review_email("Subprime Shirt")
+        return redirect("/products/subprime-shirt")
+
+    else:
+        return render_template("products/subprime-shirt.html")
 
 @app.route("/products/ftx-shirt", methods=["GET", "POST"])
 def product_10():
-    return render_template("products/ftx-shirt.html")
+    # return render_template("products/ftx-shirt.html")
 
+    if request.method == "POST":
+        send_review_email("FTX Bahamas Retreat Shirt")
+        return redirect("/products/ftx-shirt")
+
+    else:
+        return render_template("products/ftx-shirt.html")
 
 @app.route("/products/lehman-shirt", methods=["GET", "POST"])
 def product_11():
-    return render_template("products/lehman-shirt.html")
+    # return render_template("products/lehman-shirt.html")
 
+    if request.method == "POST":
+        send_review_email("Lehman Shirt")
+        return redirect("/products/lehman-shirt")
+
+    else:
+        return render_template("products/lehman-shirt.html")
 
 @app.route("/products/bear-stearns-intern-shirt", methods=["GET", "POST"])
 def product_12():
-    return render_template("products/bear-stearns-intern-shirt.html")
+    # return render_template("products/bear-stearns-intern-shirt.html")
 
+    if request.method == "POST":
+        send_review_email("Bear Stearns Intern Shirt")
+        return redirect("/products/bear-stearns-intern-shirt")
+
+    else:
+        return render_template("products/bear-stearns-intern-shirt.html")
 
 @app.route("/products/bear-stearns-is-fine-shirt", methods=["GET", "POST"])
 def product_13():
-    return render_template("products/bear-stearns-is-fine-shirt.html")
+    # return render_template("products/bear-stearns-is-fine-shirt.html")
 
+    if request.method == "POST":
+        send_review_email("Bear Stearns is Fine Shirt")
+        return redirect("/products/bear-stearns-is-fine-shirt")
+
+    else:
+        return render_template("products/bear-stearns-is-fine-shirt.html")
 
 @app.route("/products/svb-bonds-shirt", methods=["GET", "POST"])
 def product_14():
-    return render_template("products/svb-bonds-shirt.html")
+    # return render_template("products/svb-bonds-shirt.html")
 
+    if request.method == "POST":
+        send_review_email("SVB Bonds Shirt")
+        return redirect("/products/svb-bonds-shirt")
+
+    else:
+        return render_template("products/svb-bonds-shirt.html")
 
 @app.route("/products/theta-gang-shirt", methods=["GET", "POST"])
 def product_15():
-    return render_template("products/theta-gang-shirt.html")
+    # return render_template("products/theta-gang-shirt.html")
 
+    if request.method == "POST":
+        send_review_email("Theta Gang Shirt")
+        return redirect("/products/theta-gang-shirt")
+
+    else:
+        return render_template("products/theta-gang-shirt.html")
 
 @app.route("/products/svb-bank-run-shirt", methods=["GET", "POST"])
 def product_16():
-    return render_template("products/svb-bank-run-shirt.html")
-    
+    # return render_template("products/svb-bank-run-shirt.html")
+
+    if request.method == "POST":
+        send_review_email("SVB Bank Run Shirt")
+        return redirect("/products/svb-bank-run-shirt")
+
+    else:
+        return render_template("products/svb-bank-run-shirt.html")
     
 @app.route("/products/ftx-hat", methods=["GET", "POST"])
 def product_17():
-    return render_template("products/ftx-hat.html")
+    # return render_template("products/ftx-hat.html")
 
+    if request.method == "POST":
+        send_review_email("FTX Hat")
+        return redirect("/products/ftx-hat")
+
+    else:
+        return render_template("products/ftx-hat.html")
 
 # Shop navigation
 @app.route("/shop_new", methods=["GET", "POST"])
