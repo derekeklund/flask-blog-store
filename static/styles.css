@@ -11179,11 +11179,6 @@ a:hover {
   border: none !important;
 }
 
-.price {
-  color: #d63d42;
-  font-size: larger;
-}
-
 #picture-swap {
   background-image: url('/static/product_1.png');
 }
@@ -11334,8 +11329,14 @@ a:hover {
 label {
   color: #979797;
   margin-bottom: 6px;
-
 }
+
+.price {
+  color: #d63d42;
+  font-size: larger;
+}
+
+
 
 /* For the love of god please work for mobile */
 @media (max-width: 450px) {
@@ -11350,6 +11351,12 @@ label {
     border-radius: 3px;
     line-height: 1.42;
     font-family: "Open Sans", sans-serif;
+  }
+
+  .price {
+    color: #d63d42;
+    font-size: larger;
+    font-weight: 500;
   }
 }
 
