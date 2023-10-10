@@ -11341,7 +11341,7 @@ label {
 
 } */
 
-select {
+/* select {
   border: 2px solid #979797;
   padding: 7.5px 10px 8.5px;
   border-radius: 3px;
@@ -11359,19 +11359,6 @@ select {
 .option-selector {
   width: 300px;
   cursor: pointer;
-  /* Below added for mobile testing */
-  border: 2px solid #979797;
-  padding: 7.5px 10px 8.5px;
-  border-radius: 3px;
-  line-height: 1.42;
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.85714em;
-  font-weight: 700;
-  font-style: normal;
-  letter-spacing: 0;
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-  padding-right: 100px;
 }
 
 .size-selection {
@@ -11380,7 +11367,7 @@ select {
   margin-bottom: 1em;
   max-width: 50px;
   overflow: visible;
-}
+} */
 
 .quantity-box {
   display: flex;
