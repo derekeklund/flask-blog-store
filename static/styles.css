@@ -11342,6 +11342,7 @@ label {
   .option-selector {
     width: 300px;
     color: black;
+    background-color: white;
   }
 }
 
