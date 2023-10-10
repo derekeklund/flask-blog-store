@@ -11338,7 +11338,7 @@ label {
 }
 
 /* For the love of god please work for mobile */
-/* @media (max-width: 450px) {
+@media (max-width: 450px) {
   .option-selector {
     width: 300px;
     color: black;
@@ -11371,7 +11371,7 @@ select {
   margin-bottom: 1em;
   max-width: 50px;
   overflow: visible;
-} */
+}
 
 .quantity-box {
   display: flex;
