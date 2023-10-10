@@ -11365,8 +11365,7 @@ select {
   padding: 7.5px 10px 8.5px;
   border-radius: 3px;
   line-height: 1.42;
-  min-height: 30px;
-  max-height: 40px;
+  height: 35px;
   font-family: "Open Sans", sans-serif;
   font-size: 0.85714em;
   font-weight: 700;
