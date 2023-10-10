@@ -11341,7 +11341,12 @@ label {
 
 } */
 
-/* select {
+/* .select {
+  width: 300px;
+  color: black;
+} */
+
+select {
   border: 2px solid #979797;
   padding: 7.5px 10px 8.5px;
   border-radius: 3px;
@@ -11367,7 +11372,7 @@ label {
   margin-bottom: 1em;
   max-width: 50px;
   overflow: visible;
-} */
+}
 
 .quantity-box {
   display: flex;
