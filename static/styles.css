@@ -13362,3 +13362,9 @@ figcaption {
   /* padding-top: 50px; */
   margin-top: -20px;
 }
+
+.blog-interlinks {
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+}
