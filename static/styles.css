@@ -12043,6 +12043,12 @@ input::-webkit-inner-spin-button {
 	margin: 50px 0;
 }
 
+/* @media (max-width: 1100px) {
+  .projcard-container {
+    margin: 0px 0;
+  }
+} */
+
 /* Actual Code: */
 .projcard-container,
 .projcard-container * {
@@ -12884,6 +12890,20 @@ input::-webkit-inner-spin-button {
 
   .righty-bar {
     left: 190px;
+  }
+}
+
+@media (max-width: 285px) {
+  .righty-title {
+    left: 208px;
+  }
+  
+  .righty-subtitle {
+    left: 208px;
+  }
+
+  .righty-bar {
+    left: 208px;
   }
 }
 
