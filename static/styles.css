@@ -10856,6 +10856,11 @@ textarea.form-control-lg {
   height: auto;
 }
 
+.adjustable-img {
+  width: 100%;
+  height: auto;
+}
+
 .content
 {
   width: 100%;
@@ -11760,7 +11765,8 @@ select {
 }
 
 .accepted-cards {
-  width: 30%;
+  width: 50%;
+  height: auto;
 }
 
 @media screen and (max-width: 700px) {
@@ -13382,6 +13388,8 @@ figcaption {
 .sidebarImg {
   /* padding-top: 50px; */
   margin-top: -20px;
+  width: 90%;
+  height: auto;
 }
 
 .blog-interlinks {
