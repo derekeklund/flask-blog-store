@@ -10853,6 +10853,7 @@ textarea.form-control-lg {
 {
   width: 100%;
   z-index: 0;
+  height: auto;
 }
 
 .content
