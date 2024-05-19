@@ -4,6 +4,8 @@ This is a Flask-powered web app aimed to host a simple website that has a blog a
 
 Shopping cart powered by the Snipcart plugin; a subscription is needed for the shopping cart to go live.
 
+Website was live at the domain www.finrizz.com, hence some of the files referencing "FinRizz"
+
 ## Requirements
 Flask
 Requests
